@@ -4,7 +4,7 @@ const Header = () => {
     return(
         <div style={{backgroundColor: "black"}}>
             {/* left */}
-            <div>
+            <div className="left-menu">
                 <div>
                     Logo
                 </div>
@@ -15,7 +15,7 @@ const Header = () => {
             </div>
 
             {/* right */}
-            <div>
+            <div className="right-menu">
                 Cart
             </div>
         </div>
