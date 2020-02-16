@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return(
-        <div style={{backgroundColor: "black"}}>
+        <div className="header">
             {/* left */}
             <div className="left-menu">
                 <div>
