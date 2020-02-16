@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header{
@@ -19,12 +20,18 @@ body{
 .left-menu > div, .right-menu > div  {
   padding: 10px 20px;
   border-radius: 5px;
+  border: 3px solid black;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .left-menu > div:hover, .right-menu > div:hover {
-  background-color: white;
-  color: black;
-  transition: 0.2s ease-in
+  border: 3px solid white;
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 

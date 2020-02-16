@@ -5,8 +5,15 @@ const Header = () => {
         <div className="header">
             {/* left */}
             <div className="left-menu">
-                <div>
-                    Logo
+                <div style={{display: "flex"}}>
+                    <div>
+                        <i class="material-icons">
+                            video_library
+                        </i>
+                    </div>
+                    <div>
+                        E-Commerce Lab
+                    </div>
                 </div>
 
                 <div>
@@ -17,7 +24,16 @@ const Header = () => {
             {/* right */}
             <div className="right-menu">
                 <div>
-                    Cart
+                    <div style={{display: "flex"}}>
+                        <div>
+                            <i class="material-icons">
+                            shopping_cart
+                            </i>
+                        </div>
+                        <div>
+                            Cart
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
