@@ -16,7 +16,9 @@ const Header = () => {
 
             {/* right */}
             <div className="right-menu">
-                Cart
+                <div>
+                    Cart
+                </div>
             </div>
         </div>
     )

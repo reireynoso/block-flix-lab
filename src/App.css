@@ -7,7 +7,7 @@ body{
   background-color: black;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
 }
 
 .left-menu {
@@ -16,13 +16,15 @@ body{
   color: white;
 }
 
-.left-menu > div {
-  padding: 0px 20px;
+.left-menu > div, .right-menu > div  {
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.left-menu > div:hover {
+.left-menu > div:hover, .right-menu > div:hover {
   background-color: white;
   color: black;
+  transition: 0.2s ease-in
 }
 
 
