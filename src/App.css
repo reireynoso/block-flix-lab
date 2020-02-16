@@ -6,13 +6,26 @@ body{
 .header{
   background-color: black;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .left-menu {
-  
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }
 
-.right-menu{
+.left-menu > div {
+  padding: 0px 20px;
+}
 
+.left-menu > div:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.right-menu{
+  color: white;
 }
