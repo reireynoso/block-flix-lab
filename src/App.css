@@ -17,7 +17,7 @@ body{
   color: white;
 }
 
-.left-menu > div, .right-menu > div  {
+.left-menu > div, .right-menu > div > div  {
   padding: 10px 20px;
   border-radius: 5px;
   border: 3px solid black;
@@ -28,29 +28,37 @@ body{
   height: 20px;
 }
 
-.right-menu > div:hover {
+.right-menu > div > div:hover {
   border: 3px solid white;
   transition: 0.2s ease-in;
   cursor: pointer;
 }
 
 select {
+  border: 2px solid white;
   border-right: none;
-  padding: none;
-  border-radius: 0;
+  display: block;
+  height: 30px;
 }
 
 input[type=text] {
+  padding: 0;
+  border: 0;
   border-radius: 5px;
-  width: 32em;
+  width: 40em;
   border-left: none;
+  display: block;
+  height: 30px;
 }
 
 .filter {
   display: flex;
 }
 
-
 .right-menu{
   color: white;
+}
+
+.items-container {
+  display: flex
 }

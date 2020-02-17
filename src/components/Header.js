@@ -6,9 +6,9 @@ const Header = () => {
         <div className="header">
             {/* left */}
             <div className="left-menu">
-                <div style={{display: "flex"}}>
+                <div className="items-container">
                     <div>
-                        <i class="material-icons">
+                        <i className="material-icons">
                             video_library
                         </i>
                     </div>
@@ -24,10 +24,14 @@ const Header = () => {
 
             {/* right */}
             <div className="right-menu">
-                <div>
+                <div className="items-container">
+                    <div>
+                        Orders
+                    </div>
+
                     <div style={{display: "flex"}}>
                         <div>
-                            <i class="material-icons">
+                            <i className="material-icons">
                             shopping_cart
                             </i>
                         </div>
