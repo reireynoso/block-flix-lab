@@ -1,4 +1,5 @@
 import React from 'react'
+import FilterAndSortComponent from './FilterAndSortComponent'
 
 const Header = () => {
     return(
@@ -17,7 +18,7 @@ const Header = () => {
                 </div>
 
                 <div>
-                    DVDs
+                    <FilterAndSortComponent/>
                 </div>
             </div>
 

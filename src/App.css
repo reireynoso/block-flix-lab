@@ -28,10 +28,26 @@ body{
   height: 20px;
 }
 
-.left-menu > div:hover, .right-menu > div:hover {
+.right-menu > div:hover {
   border: 3px solid white;
   transition: 0.2s ease-in;
   cursor: pointer;
+}
+
+select {
+  border-right: none;
+  padding: none;
+  border-radius: 0;
+}
+
+input[type=text] {
+  border-radius: 5px;
+  width: 32em;
+  border-left: none;
+}
+
+.filter {
+  display: flex;
 }
 
 
