@@ -39,16 +39,26 @@ select {
   border-right: none;
   display: block;
   height: 30px;
+  background-color: white;
+}
+
+select:focus {
+  outline-color: silver;
 }
 
 input[type=text] {
   padding: 0;
   border: 0;
   border-radius: 5px;
-  width: 40em;
+  width: 30em;
   border-left: none;
+  background-color: white;
   display: block;
   height: 30px;
+}
+
+input[type=text]:focus{
+  outline-color: silver;
 }
 
 .filter {
