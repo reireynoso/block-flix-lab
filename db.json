@@ -1,94 +1,125 @@
 {
-  "categories": [
-   
-        {
-          "id": 1,
-          "name": "Skinny Peltz",
-          "price": 40.00,
-          "description": "Cute, chewy animal friends!",
-          "image_url": "https://img.chewy.com/is/image/catalog/104294_MAIN._AC_SL1500_V1534452692_.jpg"
-        },
-        {
-          "id": 2,
-          "name": "Striped Mice",
-          "price": 20.00,
-          "description": "Hand knit mice in a variety of colors.",
-          "image_url": "https://i5.walmartimages.com/asr/cf959088-61d5-4a6d-a6d0-01be97913a75_1.adc6e2e5a5b04dacbe5f648485927cdb.jpeg"
-        },
-        {
-          "id": 3,
-          "name": "Parrot Pals",
-          "price": 40.00,
-          "description": "Hand stuffed cotton parrot with real feather tail.",
-          "image_url": "https://petco.scene7.com/is/image/PETCO/1343050-left-1"
-        },
-        {
-          "id": 4,
-          "name": "Ceramic Cup Noodles Cubby",
-          "price": 40.00,
-          "description": "Rolled pottery decorated as a delicious cup o' noodles.",
-          "image_url": "https://i.etsystatic.com/19195803/d/il/8204df/1777872361/il_340x270.1777872361_cgqo.jpg?version=0"
-      
-        },
-
-        {
-          "id": 5,
-          "name": "Adidog Hoody",
-          "price": 70.00,
-          "description": "Sleek hoody for athletic dogs.",
-          "image_url": "https://images-na.ssl-images-amazon.com/images/I/61lYgwb5xDL._SX425_.jpg"
-        },
-        {
-          "id": 6,
-          "name": "Summer Pupps",
-          "price": 38.00,
-          "description": "Hand sewn patterned t-shirt.",
-          "image_url": "https://www.dhresource.com/0x0s/f2-albu-g7-M01-54-D0-rBVaSVvwG4SAZJKcAAELJu9e1fk722.jpg/dog-clothes-for-small-dogs-french-bulldog.jpg"
-        },
-        {
-          "id": 7,
-          "name": "Hamosaur",
-          "price": 25.00,
-          "description": "Cute felt dino costumes for your little hammies.",
-          "image_url": "https://img.buzzfeed.com/buzzfeed-static/static/2015-03/10/21/enhanced/webdr15/original-29934-1426038806-5.jpg?downsize=700:*&output-format=auto&output-quality=auto"
-      
-        },
-        {
-          "id": 8,
-          "name": "The Red Nosed Iguanadeer",
-          "price": 57.00,
-          "description": "Velvet and cotton iguana costume.",
-          "image_url": "http://gallery.kingsnake.com/data/61334Christmas_Kismet_2-med.jpg"
+  "items": [
+      {
+        "id": 1,
+        "category": "pets",
+        "name": "Skinny Peltz",
+        "price": 40.00,
+        "description": "Cute, chewy animal friends!",
+        "image_url": "https://img.chewy.com/is/image/catalog/104294_MAIN._AC_SL1500_V1534452692_.jpg"
+      },
+      {
+        "id": 2,
+        "category": "pets",
+        "name": "Striped Mice",
+        "price": 20.00,
+        "description": "Hand knit mice in a variety of colors.",
+        "image_url": "https://i5.walmartimages.com/asr/cf959088-61d5-4a6d-a6d0-01be97913a75_1.adc6e2e5a5b04dacbe5f648485927cdb.jpeg"
+      },
+      {
+        "id": 3,
+        "category": "pets",
+        "name": "Parrot Pals",
+        "price": 40.00,
+        "description": "Hand stuffed cotton parrot with real feather tail.",
+        "image_url": "https://petco.scene7.com/is/image/PETCO/1343050-left-1"
+      },
+      {
+        "id": 4,
+        "category": "pets",
+        "name": "Ceramic Cup Noodles Cubby",
+        "price": 40.00,
+        "description": "Rolled pottery decorated as a delicious cup o' noodles.",
+        "image_url": "https://i.etsystatic.com/19195803/d/il/8204df/1777872361/il_340x270.1777872361_cgqo.jpg?version=0"
     
-        },
-
-        {
-          "id": 9,
-          "name": "Peanut Butter Bones",
-          "price": 37.00,
-          "description": "Crunchy, grain-free peanut butter snackies for your pups.",
-          "image_url": "https://www.simplyquinoa.com/wp-content/uploads/2017/12/grain-free-peanut-butter-dog-treats-5.jpg"
-        },
-        {
-          "id": 10,
-          "name": "Duck Jerky",
-          "price": 57.00,
-          "description": "Hand-cured duck jerky bites. Perfect for a good dog.",
-          "image_url": "https://www.bestbullysticks.com/content/images/thumbs/0006309_duck-jerky-dog-treats.jpeg"
-        },
-        {
-          "id": 11,
-          "name": "Iguana Bowls",
-          "price": 12.00,
-          "description": "Hand-picked salad mixes made fresh everyday.",
-          "image_url": "https://kbmdc.org/wp-content/uploads/2017/02/iguana_eating_food.jpg"
-        },
-        {
-          "id": 12,
-          "name": "Homemade Cat Treats",
-          "price": 23.00,
-          "description": "A batch of easy, homemade cat treats, perfect for fussy cats.",
-          "image_url": "https://cdn-image.myrecipes.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/homemade-cat-treats-dcms-large.jpeg?itok=siyEi11F"
-        }
+      },
+      {
+        "id": 5,
+        "category": "pets",
+        "name": "Adidog Hoody",
+        "price": 70.00,
+        "description": "Sleek hoody for athletic dogs.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61lYgwb5xDL._SX425_.jpg"
+      },
+      {
+        "id": 6,
+        "category": "shoes",
+        "name": "Women's Cloudfoam Pure Running Shoe",
+        "price": 60.00,
+        "description": "Explore your surroundings. These adidas running-inspired shoes feature a foot-hugging knit upper and a female-friendly fit. Soft midsole cushioning adds comfort as you head out for coffee or discover a busy side street.",
+        "image_url": "https://m.media-amazon.com/images/I/61zLDSMp+5L._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      {
+        "id": 7,
+        "category": "shoes",
+        "name": "Men's Daily 2.0 Sneaker",
+        "price": 60.00,
+        "description": "adidas shoes",
+        "image_url": "https://m.media-amazon.com/images/I/81hKjPSPwgL._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      {
+        "id": 8,
+        "category": "shoes",
+        "name": "Women's Gel-Contend 5 Running Shoes",
+        "price": 43.00,
+        "description": "Go further than ever before with the women's GEL-CONTEND 5 running shoe by ASICS created to offer the energized cushioning and stability required to clock up those extra miles. The GEL-CONTEND 5 shoe offers a supportive fit thanks to an internal heel counter while rearfoot GEL technology and the AMPLIFOAM midsole ensure your feet remain cushioned and comfortable every step of the way.",
+        "image_url": "https://m.media-amazon.com/images/I/61nUDLHA+0L._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      {
+        "id": 9,
+        "category": "shoes",
+        "name": "Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker",
+        "price": 30.00,
+        "description": "Get the maximum comfort and cushioning for athletic walking with the Skechers go walk max. Mesh fabric upper with cushioned, supportive sole design. Designed with Skechers performance technology and materials specifically for athletic walking.",
+        "image_url": "https://m.media-amazon.com/images/I/61HV1vHdTRL._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      {
+        "id": 10,
+        "category": "shoes",
+        "name": "Men's 608v5 Casual Comfort Cross Trainer Shoe",
+        "price": 70.00,
+        "description": "The 608v5 enhances all day comfort with a larger abzorb heel crash pad, durable molded pu insert and relaxed fit last to help provide versatile comfort wear after wear.",
+        "image_url": "https://m.media-amazon.com/images/I/81OKODDpidL._AC_UL640_FMwebp_QL65_.jpg"
+      },
+      {
+        "id": 11,
+        "category": "technology",
+        "name": "Acer R240HY bidx 23.8-Inch IPS HDMI DVI VGA (1920 x 1080) Widescreen Monitor",
+        "price": 100.00,
+        "description": "The Acer R Series 23. 8 inch wide viewing IPS display shows every detail clearly and vivid without color difference from any viewing angle. Its zero frame design puts no boundary on your visual enjoyment while the brushed hairline finish stand matches any environment.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/91K9SyGiyzL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 12,
+        "category": "technology",
+        "name": "Lenovo Smart Tab M10 HD 10.1” Android Tablet 16GB with Alexa Enabled Charging Dock Included",
+        "price": 110.00,
+        "description": "The Lenovo Tab M10 (HD) is one impressive family tablet. It is packed with powerful Qualcomm Snapdragon quad-core 2. 0 GHz and supports fast connection with true 2. 4 GHz/5 GHz Wi-Fi dual bands.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/71320MVSdWL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 13,
+        "category": "technology",
+        "name": "Acer Aspire C24-865-UA91 AIO Desktop",
+        "price": 600.00,
+        "description": "Acer Aspire C24 865 UA91 AIO 23.8 inch Desktop comes with these specs: 8th Generation Intel Core i5 8250U Processor 1.6GHz with Turbo Boost Technology up to 3.4GHz and other stuff",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/81cdiTajZSL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 14,
+        "category": "technology",
+        "name": "Seagate Portable 2TB External Hard Drive Portable HDD",
+        "price": 60.00,
+        "description": "Easily store and access 2TB of content.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/81tjLksKixL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 15,
+        "category": "technology",
+        "name": "TP-Link 5 Port Gigabit Ethernet Network Switch",
+        "price": 18.00,
+        "description": "TP-LINK’s TL-SG105 provides an easy way to expand your wired network.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/71EOtJcBdML._AC_SL1500_.jpg"
+      }
   ]
 }
