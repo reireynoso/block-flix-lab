@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ItemsContainer from './ItemsContainer'
 
-export default class componentName extends Component {
+export default class MainContainer extends Component {
   render() {
     return (
       <div className="main-component">
           <h1>Component</h1>
-          <ItemsContainer/>
+          <ItemsContainer items={this.props.items}/>
       </div>
     );
   }

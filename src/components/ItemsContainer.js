@@ -1,10 +1,12 @@
 import React from 'react'
 import ItemCard from './ItemCard'
 
-const ItemsContainer = () => {
+const ItemsContainer = (props) => {
     return(
-        <div className="items-container">
-
+        <div className="e-commerce-container">
+            {
+                props.items.map(item => <ItemCard key={item.id} item={item}/>)
+            }
         </div>
     )
 }

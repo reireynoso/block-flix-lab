@@ -13,8 +13,22 @@ body{
   height: 15vh;
 }
 
-.items-container{
-  
+.e-commerce-container{
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
+}
+
+.item-card {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  align-self: stretch;
 }
 
 .main-component {
