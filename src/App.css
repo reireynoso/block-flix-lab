@@ -5,10 +5,20 @@ body{
 }
 
 .header{
+  box-sizing: border-box;
   background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  height: 15vh;
+}
+
+
+.main-component {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 0 10%;
+  height: 85vh;
 }
 
 .left-menu {
