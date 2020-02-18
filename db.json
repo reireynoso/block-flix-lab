@@ -120,6 +120,46 @@
         "price": 18.00,
         "description": "TP-LINK’s TL-SG105 provides an easy way to expand your wired network.",
         "image_url": "https://images-na.ssl-images-amazon.com/images/I/71EOtJcBdML._AC_SL1500_.jpg"
+      },
+      {
+        "id": 16,
+        "category": "games",
+        "name": "Cards Against Humanity",
+        "price": 25.00,
+        "description": "Appropriate card game to play with anyone of any age.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/71ZV5BcG4wL._AC_SX368_.jpg"
+      },
+      {
+        "id": 17,
+        "category": "games",
+        "name": "Mattel Games UNO: Classic",
+        "price": 10.00,
+        "description": "Card game to destroy friendships.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/819F444MSYL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 18,
+        "category": "games",
+        "name": "Jenga Classic Game",
+        "price": 10.00,
+        "description": "Game to build dexterity and patience.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/81OAWwX3djL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 19,
+        "category": "games",
+        "name": "What Do You Meme?",
+        "price": 30.00,
+        "description": "Meme game?",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/516jTn7V97L._AC_SL1185_.jpg"
+      },
+      {
+        "id": 20,
+        "category": "games",
+        "name": "Guess Who?",
+        "price": 10.00,
+        "description": "Classic.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/91rztq4TelL._AC_SL1500_.jpg"
       }
   ]
 }
