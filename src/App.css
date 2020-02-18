@@ -13,12 +13,19 @@ body{
   height: 15vh;
 }
 
+.items-container{
+  
+}
 
 .main-component {
+  box-sizing: border-box;
   border-left: 2px solid black;
   border-right: 2px solid black;
+  padding: 5px;
   margin: 0 10%;
   height: 85vh;
+  overflow-y: scroll;
+  text-align: center;
 }
 
 .left-menu {
