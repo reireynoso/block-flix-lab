@@ -5,7 +5,7 @@ export default class MainContainer extends Component {
   render() {
     return (
       <div className="main-component">
-          <h1>Component</h1>
+          <h1>Store Items</h1>
           <ItemsContainer items={this.props.items}/>
       </div>
     );

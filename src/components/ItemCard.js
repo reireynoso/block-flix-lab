@@ -12,8 +12,7 @@ const ItemCard = (props) => {
                     <i className="material-icons">
                         shopping_cart
                     </i>
-                </div>
-                
+                </div>      
                 <div>
                     Add to Cart
                 </div>
