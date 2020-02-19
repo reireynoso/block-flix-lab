@@ -52,11 +52,11 @@ body{
   font-size: 1.05em;
 }
 
-.item-button:focus {
+.item-button:focus, .item-card-simplified-button:focus{
   outline: 0;
 }
 
-.item-button:hover {
+.item-button:hover, .item-card-simplified-button:hover {
   background-color: silver;
   transition: 0.1s ease-in;
 }
