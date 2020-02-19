@@ -20,15 +20,16 @@ body{
   background-color: #fff;
   color: #444;
   justify-content: center;
+  /* overflow-y: scroll; */
 }
 
 .item-card {
   background-color: #444;
   color: #fff;
+  height: 350px;
   border-radius: 5px;
   padding: 20px;
-  font-size: 150%;
-  align-self: stretch;
+  /* font-size: 150%; */
 }
 
 .main-component {
@@ -38,8 +39,8 @@ body{
   padding: 5px;
   margin: 0 10%;
   height: 85vh;
-  overflow-y: scroll;
   text-align: center;
+  overflow-y: scroll;
 }
 
 .left-menu {
