@@ -31,6 +31,10 @@ body{
   margin: 2px;
 }
 
+.item-card-simplified-image {
+  display: block
+}
+
 .item-card-simplified-button {
   margin: auto;
   display: flex;
