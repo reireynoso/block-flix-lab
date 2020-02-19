@@ -5,7 +5,14 @@ import MainContainer from './components/MainContainer'
 
 class App extends React.Component {
   state = {
-    items: []
+    items: [],
+    header: ""
+  }
+
+  clickHeader = (val) => {
+    this.setState({
+      header: val
+    })
   }
   componentDidMount(){
     fetch(`http://localhost:4000/items`)
@@ -17,8 +24,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Header/>
-        <MainContainer items={this.state.items}/>
+        <Header clickHeader={this.clickHeader}/>
+        <MainContainer header={this.state.header} items={this.state.items}/>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterAndSortComponent from './FilterAndSortComponent'
 
-const Header = () => {
+const Header = (props) => {
     return(
         <div className="header">
             {/* left */}
@@ -25,11 +25,11 @@ const Header = () => {
             {/* right */}
             <div className="right-menu">
                 <div className="items-container">
-                    <div>
+                    <div onClick={() => props.clickHeader("order")}>
                         Orders
                     </div>
 
-                    <div style={{display: "flex"}}>
+                    <div onClick={() => props.clickHeader("cart")} style={{display: "flex"}}>
                         <div>
                             <i className="material-icons">
                             shopping_cart
