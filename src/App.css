@@ -24,8 +24,8 @@ body{
 }
 
 .item-card {
-  background-color: #444;
-  color: #fff;
+  background-color: rgb(250, 237, 237);
+  color: rgb(133, 125, 125);
   height: 350px;
   border-radius: 5px;
   padding: 20px;
