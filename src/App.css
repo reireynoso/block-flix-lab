@@ -24,15 +24,21 @@ body{
 
 .item-card-simplified{
   display: flex;
-  /* justify-content: space-evenly */
+  justify-content: space-between;
 }
 
-.item-card-simplified > * {
+.item-card-simplified > *,  .item-card-simplified > * > *{
   margin: 2px;
 }
 
+.item-card-simplified > div {
+  display: flex;
+}
+
 .item-card-simplified-image {
-  display: block
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
 .item-card-simplified-button {
