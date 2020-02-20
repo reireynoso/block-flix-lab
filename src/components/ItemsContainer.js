@@ -3,10 +3,13 @@ import ItemCard from './ItemCard'
 
 const ItemsContainer = (props) => {
     return(
-        <div className="e-commerce-container">
+        <div>
+            <h1>Store Items</h1>
+            <div className="e-commerce-container">
             {
                 props.items.map(item => <ItemCard key={item.id} item={item}/>)
             }
+            </div>
         </div>
     )
 }

@@ -19,7 +19,6 @@ export default class MainContainer extends Component {
   render() {
     return (
       <div className="main-component">
-          <h1>Store Items</h1>
           {
               this.renderWhat()
           }
