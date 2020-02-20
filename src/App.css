@@ -117,6 +117,16 @@ body{
   border: 2px solid rgb(67, 68, 71);
   padding: 4px;
   margin: 4px;
+  
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  justify-content: center;
 }
 
 .right-menu > div > div:hover {
