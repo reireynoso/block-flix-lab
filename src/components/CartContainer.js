@@ -6,6 +6,7 @@ export default class CartContainer extends Component {
     return (
         <div>
             <h1>Cart</h1>
+            <button onClick={() => this.props.checkout(this.props.items)}>Place Order</button>
             <div className="cart-container">
                 {
                     this.props.items.map(item => <ItemCardSimplified item={item}/>)

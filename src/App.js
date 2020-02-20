@@ -6,7 +6,14 @@ import MainContainer from './components/MainContainer'
 class App extends React.Component {
   state = {
     items: [],
+    orders: [],
     header: ""
+  }
+
+  checkOut = (items) => {
+    this.setState({
+      orders: [...this.state.orders, items]
+    })
   }
 
   clickHeader = (val) => {
@@ -25,7 +32,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header clickHeader={this.clickHeader}/>
-        <MainContainer header={this.state.header} items={this.state.items}/>
+        <MainContainer orders={this.state.orders} checkout={this.checkOut} header={this.state.header} items={this.state.items}/>
       </div>
     );
   }
