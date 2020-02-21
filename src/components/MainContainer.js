@@ -7,13 +7,20 @@ export default class MainContainer extends Component {
 
     renderWhat = () => {
         if(this.props.header === "cart"){
-            return <CartContainer checkout={this.props.checkout} items={this.props.items}/>
+            return <CartContainer 
+                checkout={this.props.checkout} 
+                cart={this.props.cart}
+                handleRemoveFromCart={this.props.handleRemoveFromCart}
+            />
         }
         else if(this.props.header === "order"){
             return <OrderContainer orders={this.props.orders}/>
         }
         else{
-            return <ItemsContainer items={this.props.items}/>
+            return <ItemsContainer 
+            items={this.props.items}
+            handleAddToCart={this.props.handleAddToCart}
+            />
         }
     }
   render() {

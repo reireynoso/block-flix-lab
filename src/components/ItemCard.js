@@ -7,7 +7,7 @@ const ItemCard = (props) => {
             <img className="item-image" src={props.item.image_url}/>
             <p>{props.item.description}</p>
             <p>Price: ${props.item.price}</p>
-            <button className="item-button">
+            <button onClick={() => props.handleAddToCart(props.item)} className="item-button">
                 <div>
                     <i className="material-icons">
                         shopping_cart

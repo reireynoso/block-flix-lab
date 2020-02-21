@@ -6,7 +6,7 @@ const Header = (props) => {
         <div className="header">
             {/* left */}
             <div className="left-menu">
-                <div className="items-container">
+                <div onClick={() => props.clickHeader("items")} className="items-container">
                     <div>
                         <i className="material-icons">
                             video_library
@@ -18,7 +18,10 @@ const Header = (props) => {
                 </div>
 
                 <div>
-                    <FilterAndSortComponent/>
+                    {
+                        props.header === "items" ? <FilterAndSortComponent/> : null
+                    }
+                    
                 </div>
             </div>
 

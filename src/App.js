@@ -7,18 +7,33 @@ class App extends React.Component {
   state = {
     items: [],
     orders: [],
-    header: ""
+    cart: [],
+    header: "items"
   }
 
   checkOut = (items) => {
     this.setState({
-      orders: [...this.state.orders, items]
+      orders: [...this.state.orders, items],
+      cart: []
     })
   }
 
   clickHeader = (val) => {
     this.setState({
       header: val
+    })
+  }
+
+  handleAddToCart = (item) => {
+    this.setState({
+      cart: [...this.state.cart, item]
+    })
+  }
+
+  handleRemoveFromCart = (item) => {
+    const removedCart = this.state.cart.filter(cartItem => cartItem.id !== item.id)
+    this.setState({
+      cart: removedCart
     })
   }
   componentDidMount(){
@@ -31,8 +46,16 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Header clickHeader={this.clickHeader}/>
-        <MainContainer orders={this.state.orders} checkout={this.checkOut} header={this.state.header} items={this.state.items}/>
+        <Header header={this.state.header} clickHeader={this.clickHeader}/>
+        <MainContainer 
+          orders={this.state.orders} 
+          checkout={this.checkOut} 
+          cart={this.state.cart} 
+          header={this.state.header} 
+          items={this.state.items}
+          handleAddToCart={this.handleAddToCart}
+          handleRemoveFromCart={this.handleRemoveFromCart}
+        />
       </div>
     );
   }

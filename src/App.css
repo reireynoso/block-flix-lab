@@ -188,5 +188,6 @@ input[type=text]:focus{
 }
 
 .items-container {
-  display: flex
+  display: flex;
+  cursor: pointer;
 }
