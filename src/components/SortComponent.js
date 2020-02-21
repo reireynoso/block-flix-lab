@@ -7,7 +7,7 @@ export default class SortComponent extends Component {
           <select onChange={(e) => this.props.handleSelectedCategory(e.target.value)}>
               <option value="all">All</option>
               {
-                this.props.categories.map(category => <option value={category}>{category}</option>)
+                this.props.categories.map(category => <option key={category} value={category}>{category}</option>)
               }
           </select>
       </div>

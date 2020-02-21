@@ -10,6 +10,7 @@ export default class CartContainer extends Component {
             <div className="cart-container">
                 {
                     this.props.cart.map(item => <CartCard 
+                        key={item.id}
                         item={item}
                         handleRemoveFromCart={this.props.handleRemoveFromCart}
                     />)

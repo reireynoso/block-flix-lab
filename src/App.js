@@ -15,13 +15,13 @@ class App extends React.Component {
   }
 
   handleSelectedCategory = (selectedCategory) => {
-    console.log(selectedCategory)
     this.setState({
       selectedCategory
     })
   }
 
   handleSearchFilter = (searchFilter) => {
+    // console.log(searchFilter)
     this.setState({
       searchFilter
     })
@@ -81,6 +81,10 @@ class App extends React.Component {
       return items.filter(item => item.category === this.state.selectedCategory)
     }
   }
+
+  handleSearch = (items) => {
+    return items.filter(item => item.name.toLowerCase().includes(this.state.searchFilter.toLowerCase()))
+  }
   render(){
     return (
       <div className="App">
@@ -96,7 +100,7 @@ class App extends React.Component {
           checkout={this.checkOut} 
           cart={this.state.cart} 
           header={this.state.header} 
-          items={this.handleSort(this.state.items)}
+          items={this.handleSearch(this.handleSort(this.state.items))}
           handleAddToCart={this.handleAddToCart}
           handleRemoveFromCart={this.handleRemoveFromCart}
         />
