@@ -8,9 +8,24 @@ class App extends React.Component {
     items: [],
     orders: [],
     cart: [],
-    header: "items"
+    header: "items",
+    selectedCategory: "all",
+    searchFilter: "",
+    categories: []
   }
 
+  handleSelectedCategory = (selectedCategory) => {
+    console.log(selectedCategory)
+    this.setState({
+      selectedCategory
+    })
+  }
+
+  handleSearchFilter = (searchFilter) => {
+    this.setState({
+      searchFilter
+    })
+  }
   checkOut = (items) => {
     this.setState({
       orders: [...this.state.orders, items],
@@ -39,20 +54,49 @@ class App extends React.Component {
   componentDidMount(){
     fetch(`http://localhost:4000/items`)
     .then(res => res.json())
-    .then(items => this.setState({
+    .then(items => 
+      this.setState({
       items
-    }))
+    }, () => this.handleCategories())
+  )}
+
+  handleCategories = () => {
+    const categories = []
+    this.state.items.map(item => {
+      if(!categories.includes(item.category)){
+        categories.push(item.category)
+      }
+    })
+
+    this.setState({
+      categories
+    })
+  }
+
+  handleSort = (items) => {
+    if(this.state.selectedCategory === "all"){
+      return items
+    }
+    else{
+      return items.filter(item => item.category === this.state.selectedCategory)
+    }
   }
   render(){
     return (
       <div className="App">
-        <Header header={this.state.header} clickHeader={this.clickHeader}/>
+        <Header 
+          header={this.state.header} 
+          clickHeader={this.clickHeader}
+          handleSearchFilter={this.handleSearchFilter}
+          handleSelectedCategory={this.handleSelectedCategory}
+          categories={this.state.categories}
+        />
         <MainContainer 
           orders={this.state.orders} 
           checkout={this.checkOut} 
           cart={this.state.cart} 
           header={this.state.header} 
-          items={this.state.items}
+          items={this.handleSort(this.state.items)}
           handleAddToCart={this.handleAddToCart}
           handleRemoveFromCart={this.handleRemoveFromCart}
         />

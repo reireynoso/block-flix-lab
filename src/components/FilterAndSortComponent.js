@@ -6,8 +6,8 @@ export default class FilterAndSortComponent extends Component {
   render() {
     return (
       <div className="filter">
-          <SortComponent/>
-          <FilterComponent/>
+          <SortComponent categories={this.props.categories} handleSelectedCategory={this.props.handleSelectedCategory}/>
+          <FilterComponent handleSearchFilter={this.props.handleSearchFilter}/>
       </div>
     );
   }

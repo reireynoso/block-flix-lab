@@ -19,7 +19,13 @@ const Header = (props) => {
 
                 <div>
                     {
-                        props.header === "items" ? <FilterAndSortComponent/> : null
+                        props.header === "items" ? <FilterAndSortComponent  
+                            handleSearchFilter={props.handleSearchFilter}
+                            handleSelectedCategory={props.handleSelectedCategory}
+                            categories={props.categories}
+                        /> 
+                        : 
+                        null
                     }
                     
                 </div>
