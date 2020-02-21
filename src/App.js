@@ -62,7 +62,7 @@ class App extends React.Component {
 
   handleCategories = () => {
     const categories = []
-    this.state.items.map(item => {
+    this.state.items.forEach(item => {
       if(!categories.includes(item.category)){
         categories.push(item.category)
       }
