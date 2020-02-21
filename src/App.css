@@ -27,6 +27,23 @@ body{
   justify-content: space-between;
 }
 
+.cart-button {
+  margin: auto;
+  display: flex;
+  border: 2px solid rgb(70, 70, 136);
+  background-color: rgb(64, 73, 112);
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.cart-button:hover {
+  background-color: silver;
+  transition: 0.1s ease-in;
+}
+
 .item-card-simplified > *,  .item-card-simplified > * > *{
   margin: 2px;
 }
@@ -62,7 +79,7 @@ body{
   font-size: 1.05em;
 }
 
-.item-button:focus, .item-card-simplified-button:focus{
+.item-button:focus, .item-card-simplified-button:focus, .cart-button:focus{
   outline: 0;
 }
 
