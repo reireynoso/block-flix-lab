@@ -13,7 +13,7 @@ To get you going, we've got a backend with store items! To get these, you're goi
 
 If the command, `json-server` is not recognized, you might have to run `npm install -g json-server`
 
-Let's run the app with `npm run start` or `npm start`. You will be asked if to use localhost:3001, consent to that.
+Let's run the app with `npm run start` or `npm start`. 
 
 ## Background
 
@@ -22,6 +22,7 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ## Deliverables
 
 **It might help to first draw out the component hierarchy**
+**Notice that some parts of state in App.js is provided. You may need to add more to keep track of other features**
 
 * Fetch the data from http://localhost:4000/items
 * Render each item with the ItemCard component.
@@ -29,13 +30,17 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ```
    <button disabled className="item-button">Already in Cart</button>
 ```
-* In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, ItemsContainer should render with the list of all items fetched from the database. 
+* In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, `ItemsContainer` should render with the list of all items fetched from the database. Clicking on E-Commerce Lab should also render `ItemsContainer`
 
-* When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button exist which will empty the items in the cart and add the order with items to the list of orders.
+* When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
+
+* If nothing is on the cart, we should not be able to place an order.
 
 * In the `CartContainer`, the `CartCard` generated should have a button with the text "Remove from Cart". When this button is clicked, it should remove the specific item from the cart.
 
 * When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays).
+
+* If no past orders have been placed, a message should render stating so.
 
 * In the `Header` component, we also have the `FilterAndSortComponent` that contains both the `SortComponent` and `FilterComponents`. This component should only be rendered when you viewing ALL of the items, not when you are viewing the Cart or Orders. 
 
@@ -43,12 +48,6 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 
 * The `FilterComponent` renders an input field. As you type, only the items whose names contains the what it typed should be rendered.
 
-### BONUS 
 
-## Edge Cases
+**Feel free to add other features you can think of**
 
-* If nothing is on the cart, we should not be able to place an order.
-
-* If no past orders have been placed, a message should render stating so.
-
-* 
