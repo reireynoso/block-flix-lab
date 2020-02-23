@@ -22,7 +22,6 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ## Deliverables
 
 **It might help to first draw out the component hierarchy**
-**Not all of the components have been generated for you. You have the freedom to reuse components or create new components.**
 
 * Fetch the data from http://localhost:4000/items
 * Render each item with the ItemCard component.
@@ -30,11 +29,19 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ```
    <button disabled className="item-button">Already in Cart</button>
 ```
-* In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, ItemsContainer should render with the list of all items fetched from the database. When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. 
+* In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, ItemsContainer should render with the list of all items fetched from the database. 
 
-* In the `CartContainer`, the `PhotoCard` generated should have a button with the text "Remove from Favorites". When this button is clicked, it should remove the specific photo from the favorites collection.
+* When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button exist which will empty the items in the cart and add the order with items to the list of orders.
 
-* In the `AddNewPhotoForm`, when the form is submitted, a new photo is stored in the collection of all photos. (You might have to get creative if you're working with the ID)
+* When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays).
+
+* In the `CartContainer`, the `CartCard` generated should have a button with the text "Remove from Cart". When this button is clicked, it should remove the specific item from the cart.
+
+* In the `Header` component, we also have the `FilterAndSortComponent` that contains both the `SortComponent` and `FilterComponents`. This component should only be rendered when you viewing ALL of the items, not when you are viewing the Cart or Orders. 
+
+* The `SortComponent` should render a select with the option of each category of the items. When a specific category is selected, only the items with the same category should be rendered.
+
+* The `FilterComponent` renders an input field. This should also render out only the items whose names match 
 
 ### BONUS 
 
