@@ -50,3 +50,5 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 * If nothing is on the cart, we should not be able to place an order.
 
 * If no past orders have been placed, a message should render stating so.
+
+* 
