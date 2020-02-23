@@ -33,18 +33,20 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 
 * When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button exist which will empty the items in the cart and add the order with items to the list of orders.
 
-* When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays).
-
 * In the `CartContainer`, the `CartCard` generated should have a button with the text "Remove from Cart". When this button is clicked, it should remove the specific item from the cart.
+
+* When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays).
 
 * In the `Header` component, we also have the `FilterAndSortComponent` that contains both the `SortComponent` and `FilterComponents`. This component should only be rendered when you viewing ALL of the items, not when you are viewing the Cart or Orders. 
 
 * The `SortComponent` should render a select with the option of each category of the items. When a specific category is selected, only the items with the same category should be rendered.
 
-* The `FilterComponent` renders an input field. This should also render out only the items whose names match 
+* The `FilterComponent` renders an input field. As you type, only the items whose names contains the what it typed should be rendered.
 
 ### BONUS 
 
-* Incorporate a `SearchBarComponent` under `PhotoContainer`. The goal is to `filter` out the photos whose author matches what is being typed. This should be dynamic. (i.e As I am typing, the photos in the container are immediately filtered)
+## Edge Cases
 
-* Notice that `PhotoContainer` and `FavoritePhotosContainer` seem pretty redundant. Any way we can reuse just one component?
+* If nothing is on the cart, we should not be able to place an order.
+
+* If no past orders have been placed, a message should render stating so.
