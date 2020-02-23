@@ -25,8 +25,8 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 **Notice that some parts of state in App.js is provided. You may need to add more to keep track of other features**
 
 * Fetch the data from http://localhost:4000/items
-* Render each item with the ItemCard component.
-* Each item card will have button that says Add to Cart, when clicked, will add to the cart (i.e it should be rendered in the CartContainer component). The button text should change to Already in Cart with the button being disabled. This can accomplished by adding a `disabled ` attribute to the button element. 
+* Render each item with the `ItemCard` component.
+* Each item card will have button that says Add to Cart, when clicked, will add to the cart (i.e it should be rendered in the `CartContainer` component). The button text should change to Already in Cart with the button being disabled. This can accomplished by adding a `disabled ` attribute to the button element. 
 ```
    <button disabled className="item-button">Already in Cart</button>
 ```
@@ -38,9 +38,9 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 
 * In the `CartContainer`, the `CartCard` generated should have a button with the text "Remove from Cart". When this button is clicked, it should remove the specific item from the cart.
 
-* When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays).
+* When Orders is clicked, `OrderContainer` should render a list of previous orders using the `OrderComponent` with the items included using the `OrderItemCard` component. (To achieve this, consider setting Order as an array of arrays). Also, find a way to keep track of order numbers for each order.
 
-* If no past orders have been placed, a message should render stating so.
+* If no past orders have been placed, a message should render stating so instead of rendering an `OrderComponent`.
 
 * In the `Header` component, we also have the `FilterAndSortComponent` that contains both the `SortComponent` and `FilterComponents`. This component should only be rendered when you viewing ALL of the items, not when you are viewing the Cart or Orders. 
 
