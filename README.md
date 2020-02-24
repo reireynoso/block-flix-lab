@@ -19,6 +19,14 @@ Let's run the app with `npm run start` or `npm start`.
 
 We have a React E-Commerce Application. We want the App to show us a list of all items in the database. We want to be able to add items to our cart and order once we are ready. We want to also see a list of past orders we placed with each item (almost like a real e-commerce website!). We want to be able to render either the list of all items, cart, or list of past orders at a time (i.e if I click on the cart button on the header, the Main Component should only render Cart Component.)
 
+Here is an sample appearance:
+
+![Image of Items](public/e-commerce.png)
+
+Here is a gif of the functionality:
+
+![Gif](http://www.giphy.com/gifs/lTYhDkDCIQNkwxGSjj)
+
 ## Deliverables
 
 **It might help to first draw out the component hierarchy**
@@ -33,7 +41,7 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ```
 * In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, `ItemsContainer` should render with the list of all items fetched from the database. Clicking on E-Commerce Lab should also render `ItemsContainer`
 
-* When "Cart" is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
+* When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
 
 * If no item is in the cart, we should not be able to place an order. (either the "Place Order" button does not appear, is disabled, or an alert can occur)
 
