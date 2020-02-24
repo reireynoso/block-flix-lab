@@ -33,7 +33,7 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 ```
 * In the `Header` component, we have a div of "E-Commerce Lab", "Orders", and "Cart". By default, when the page loads, `ItemsContainer` should render with the list of all items fetched from the database. Clicking on E-Commerce Lab should also render `ItemsContainer`
 
-* When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
+* When "Cart" is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
 
 * If no item is in the cart, we should not be able to place an order. (either the "Place Order" button does not appear, is disabled, or an alert can occur)
 
