@@ -18,7 +18,8 @@ export default class MainContainer extends Component {
             return <OrderContainer orders={orders}/>
         }
         else{
-            return <ItemsContainer 
+            return <ItemsContainer
+            cart = {cart}
             items={items}
             handleAddToCart={handleAddToCart}
             />
