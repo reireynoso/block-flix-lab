@@ -23,6 +23,7 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 
 **It might help to first draw out the component hierarchy**
 **Notice that some parts of state in App.js is provided. You may need to add more to keep track of other features**
+**Also, there are a combination of functional and class components. Feel free to convert but it is advisable to get comfortable with both**
 
 * Fetch the data from http://localhost:4000/items
 * Render each item with the `ItemCard` component.
