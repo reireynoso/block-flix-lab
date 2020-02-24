@@ -6,7 +6,7 @@ const Header = (props) => {
         <div className="header">
             {/* left */}
             <div className="left-menu">
-                <div onClick={() => props.clickHeader("items")} className="items-container">
+                <div className="items-container">
                     <div>
                         <i className="material-icons">
                             video_library
@@ -18,27 +18,18 @@ const Header = (props) => {
                 </div>
 
                 <div>
-                    {
-                        props.header === "items" ? <FilterAndSortComponent  
-                            handleSearchFilter={props.handleSearchFilter}
-                            handleSelectedCategory={props.handleSelectedCategory}
-                            categories={props.categories}
-                        /> 
-                        : 
-                        null
-                    }
-                    
+                   <FilterAndSortComponent />
                 </div>
             </div>
 
             {/* right */}
             <div className="right-menu">
                 <div className="items-container">
-                    <div onClick={() => props.clickHeader("order")}>
+                    <div>
                         Orders
                     </div>
 
-                    <div onClick={() => props.clickHeader("cart")} style={{display: "flex"}}>
+                    <div style={{display: "flex"}}>
                         <div>
                             <i className="material-icons">
                             shopping_cart
