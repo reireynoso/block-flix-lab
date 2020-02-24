@@ -24,8 +24,6 @@ export default class CartContainer extends Component {
                 :
                 <h3>No items in cart</h3>
             }
-            
-           
         </div>
     );
   }
