@@ -4,10 +4,11 @@ import FilterComponent from './FilterComponent'
 
 export default class FilterAndSortComponent extends Component {
   render() {
+    const {categories, handleSelectedCategory, handleSearchFilter} = this.props
     return (
       <div className="filter">
-          <SortComponent categories={this.props.categories} handleSelectedCategory={this.props.handleSelectedCategory}/>
-          <FilterComponent handleSearchFilter={this.props.handleSearchFilter}/>
+          <SortComponent categories={categories} handleSelectedCategory={handleSelectedCategory}/>
+          <FilterComponent handleSearchFilter={handleSearchFilter}/>
       </div>
     );
   }

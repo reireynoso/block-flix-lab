@@ -6,20 +6,21 @@ import CartContainer from './CartContainer'
 export default class MainContainer extends Component {
 
     renderWhat = () => {
-        if(this.props.header === "cart"){
+        const {header, orders, items, checkout, cart, handleAddToCart, handleRemoveFromCart} = this.props
+        if(header === "cart"){
             return <CartContainer 
-                checkout={this.props.checkout} 
-                cart={this.props.cart}
-                handleRemoveFromCart={this.props.handleRemoveFromCart}
+                checkout={checkout} 
+                cart={cart}
+                handleRemoveFromCart={handleRemoveFromCart}
             />
         }
-        else if(this.props.header === "order"){
-            return <OrderContainer orders={this.props.orders}/>
+        else if(header === "order"){
+            return <OrderContainer orders={orders}/>
         }
         else{
             return <ItemsContainer 
-            items={this.props.items}
-            handleAddToCart={this.props.handleAddToCart}
+            items={items}
+            handleAddToCart={handleAddToCart}
             />
         }
     }

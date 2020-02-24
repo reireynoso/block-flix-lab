@@ -34,7 +34,7 @@ We have a React E-Commerce Application. We want the App to show us a list of all
 
 * When Cart is clicked, the `CartContainer` component should render with only the items that were added to the cart. A "Place Order" button is rendered, when clicked, should empty the items in the cart and add the order with items to the list of orders.
 
-* If nothing is on the cart, we should not be able to place an order.
+* If no item is in the cart, we should not be able to place an order. (either the "Place Order" button does not appear, is disabled, or an alert can occur)
 
 * In the `CartContainer`, the `CartCard` generated should have a button with the text "Remove from Cart". When this button is clicked, it should remove the specific item from the cart.
 

@@ -1,13 +1,14 @@
 import React from 'react'
 
 const ItemCard = (props) => {
+    const {item: {name, image_url, description, price}, handleAddToCart} = props
     return(
         <div className="item-card">
-            <h2>{props.item.name}</h2>
-            <img className="item-image" src={props.item.image_url} alt={props.item.name}/>
-            <p>{props.item.description}</p>
-            <p>Price: ${props.item.price}</p>
-            <button onClick={() => props.handleAddToCart(props.item)} className="item-button">
+            <h2>{name}</h2>
+            <img className="item-image" src={image_url} alt={name}/>
+            <p>{description}</p>
+            <p>Price: ${price}</p>
+            <button onClick={() => handleAddToCart(props.item)} className="item-button">
                 <div>
                     <i className="material-icons">
                         shopping_cart

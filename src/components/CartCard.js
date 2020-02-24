@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class CartCard extends Component {
-  render() {
-    return (
-      <div className="item-card-simplified">
-          <div>
-            <img alt={this.props.item.name} className="item-card-simplified-image" src={this.props.item.image_url}/>
-            <p>{this.props.item.name}</p>
-          </div>
-          <button onClick={() =>  this.props.handleRemoveFromCart(this.props.item)} className="item-card-simplified-button">Remove from Cart</button>
+const CartCard = (props) => {
+  const {item, item: {image_url, name}, handleRemoveFromCart} = props
+  return (
+    <div className="item-card-simplified">
+      <div>
+        <img alt={name} className="item-card-simplified-image" src={image_url}/>
+        <p>{name}</p>
       </div>
-    );
-  }
+      <button onClick={() =>  handleRemoveFromCart(item)} className="item-card-simplified-button">Remove from Cart</button>
+    </div>
+  )
 }
+
+export default CartCard
