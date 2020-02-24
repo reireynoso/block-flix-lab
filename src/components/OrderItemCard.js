@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class OrderItemCard extends Component {
-  render() {
-    const {image_url, name} = this.props.item
+const OrderItemCard = (props) => {
+    const {image_url, name} = props.item
     return (
-    <div className="item-card-simplified">
-        <div>
-          <img className="item-card-simplified-image" src={image_url} alt={name}/>
-          <p>{name}</p>
-        </div>
-    </div>
-    );
-  }
+      <div className="item-card-simplified">
+          <div>
+            <img className="item-card-simplified-image" src={image_url} alt={name}/>
+            <p>{name}</p>
+          </div>
+      </div>
+    )
 }
+
+export default OrderItemCard
