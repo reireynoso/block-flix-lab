@@ -7,7 +7,6 @@ const ItemsContainer = (props) => {
             <h1>Store Items</h1>
             <div className="e-commerce-container">
                 <ItemCard />
-            }
             </div>
         </div>
     )
