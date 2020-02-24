@@ -19,6 +19,14 @@ Let's run the app with `npm run start` or `npm start`.
 
 We have a React E-Commerce Application. We want the App to show us a list of all items in the database. We want to be able to add items to our cart and order once we are ready. We want to also see a list of past orders we placed with each item (almost like a real e-commerce website!). We want to be able to render either the list of all items, cart, or list of past orders at a time (i.e if I click on the cart button on the header, the Main Component should only render Cart Component.)
 
+Here is an sample appearance:
+
+![Image of Items](public/e-commerce.png)
+
+Here is a gif of the functionality:
+
+![Gif](http://www.giphy.com/gifs/lTYhDkDCIQNkwxGSjj)
+
 ## Deliverables
 
 **It might help to first draw out the component hierarchy**
