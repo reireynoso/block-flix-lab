@@ -25,7 +25,7 @@ Here is an sample appearance:
 
 Here is a gif of the functionality:
 
-![Gif](http://www.giphy.com/gifs/lTYhDkDCIQNkwxGSjj)
+![Gif](https://media.giphy.com/media/RNPkWMWnVygLDr5xcv/giphy.gif)
 
 ## Deliverables
 
